@@ -151,6 +151,23 @@ form{
     color: var(--secondary);
 }
 
+// -------- modals style --------
+.modal-content{
+    border: 0;
+    border-radius: 25px;
+    padding: 30px;
+    .center_icon{
+        font-size: 50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #054B6E11;
+    }
+}
+
 .progress-wrap {
     position: fixed;
     left: 20px;
