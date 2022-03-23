@@ -387,6 +387,15 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
   color: var(--primary);
 }
 
+.navs-container .navbar .dropdown-item {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+}
+
+.navs-container .navbar .dropdown-item:hover {
+  background-color: #EBF6FF;
+}
+
 .navs-container .navbar .butn {
   padding: 0 !important;
   width: 45px;
@@ -460,6 +469,10 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
 .navs-container .navbar .navbar-toggler .navbar-toggler-icon::before {
   top: 6px;
   right: 0px;
+}
+
+.navs-container .dropdown-menu[data-bs-popper] {
+  right: -100%;
 }
 
 .footer {
@@ -1285,13 +1298,10 @@ form .show_pass {
     Start Edit about Page 
 **********************************************/
 .about-pg .text-box {
-  padding: 4vw 0;
-  -webkit-padding-end: 4vw;
-          padding-inline-end: 4vw;
+  padding: 4vw;
 }
 
 .about-pg .text-box .p {
-  font-size: 16px;
   line-height: 2;
 }
 

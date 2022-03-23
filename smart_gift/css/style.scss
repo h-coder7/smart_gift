@@ -35,6 +35,14 @@
                 color: var(--primary);
             }
         }
+        .dropdown-item {
+            padding: 0.5rem 1rem;
+            font-size: 14px;
+            &:hover{
+                background-color: #EBF6FF;
+
+            }
+        }
         .butn{
             padding: 0 !important;
             width: 45px;
@@ -99,6 +107,9 @@
                 }
             }
         }
+    }
+    .dropdown-menu[data-bs-popper] {
+        right: -100%;
     }
 }   
 
@@ -821,10 +832,8 @@ form{
 **********************************************/
 .about-pg{
     .text-box{
-        padding: 4vw 0;
-        padding-inline-end: 4vw;
+        padding: 4vw ;
         .p{
-            font-size: 16px;
             line-height: 2;
         }
     }
