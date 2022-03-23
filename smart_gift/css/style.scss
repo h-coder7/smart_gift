@@ -1003,6 +1003,18 @@ form{
     }
 }
 
+.cart-pg .table{
+    .delete_butn {
+        width: 35px;
+        height: 35px;
+        padding: 0;
+    }
+    .inFlex {
+        width: fit-content;
+    }
+}
+
+
 /**********************************************
     Start Edit Modals
 **********************************************/

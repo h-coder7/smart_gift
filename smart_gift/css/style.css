@@ -1507,6 +1507,18 @@ form .show_pass {
   color: #777;
 }
 
+.cart-pg .table .delete_butn {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+}
+
+.cart-pg .table .inFlex {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 /**********************************************
     Start Edit Modals
 **********************************************/
