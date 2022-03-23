@@ -916,6 +916,66 @@ form{
     line-height: 2.2;
     color: #777;
 }
+
+/**********************************************
+    Start Edit contact Page 
+**********************************************/
+.contact-pg{
+    .inner{
+        background-color: #fff;
+        border: 1px solid #eee;
+        position: relative;
+        z-index: 1;
+        border-radius: 45px;
+        overflow: hidden;
+        box-shadow: 3px 6px 15px 0 #eee;
+        .contact_card{
+            background-color: #EBF6FF;
+            padding: 50px 35px;
+            height: 100%;
+            .contact-links a{
+                display: block;
+                margin: 25px 0;
+                color: #555;
+                font-size: 17px;
+                i{
+                    margin-inline-end: 5px;
+                    color: var(--primary);
+                    min-width: 20px;
+                    text-align: center;
+                }
+                &:hover{
+                    color: var(--primary);
+                }
+            }
+            .social-links a{
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                display: inline-block;
+                border: 1px solid var(--secondary);
+                color: var(--secondary);
+                margin: 0 5px;
+                text-align: center;
+                border-radius: 50%;
+                &:hover{
+                    background-color: var(--secondary);
+                    color: #fff !important;
+                }
+            }
+        }
+        .form-container{
+            padding: 50px 35px;
+            .title{
+                text-align: center;
+                i{
+                    color: #AF8F67;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}
 /**********************************************
     Start Edit Modals
 **********************************************/
