@@ -634,6 +634,10 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
   color: #fff !important;
 }
 
+.price .old_price {
+  font-size: 60%;
+}
+
 /**********************************************
     Start Edit Home Page 
 **********************************************/
@@ -696,10 +700,6 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
 .products-sec .prod_card .card-body .butn {
   font-weight: bold;
   padding: 0.8rem 1rem;
-}
-
-.products-sec .prod_card .card-body .price .text-muted {
-  font-size: 60%;
 }
 
 .products-sec .prod_card:hover {
@@ -1476,6 +1476,35 @@ form .show_pass {
 .contact-pg .inner .form-container .title i {
   color: #AF8F67;
   margin: 0 5px;
+}
+
+/**********************************************
+    Start Edit product det Page 
+**********************************************/
+.product_det .img {
+  position: relative;
+}
+
+.product_det .img .fav_butn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: #eee;
+  border-radius: 50%;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.product_det .img .fav_butn.active {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.product_det .social-links a {
+  margin: 0 5px;
+  color: #777;
 }
 
 /**********************************************

@@ -246,6 +246,10 @@
         }
     }
 }
+
+.price  .old_price{
+    font-size: 60%;
+}
 /**********************************************
     Start Edit Home Page 
 **********************************************/
@@ -298,11 +302,6 @@
             .butn {
                 font-weight: bold;
                 padding: 0.8rem 1rem;
-            }
-            .price{ 
-                .text-muted{
-                    font-size: 60%;
-                }
             }
         }
         &:hover{
@@ -976,6 +975,34 @@ form{
         }
     }
 }
+
+/**********************************************
+    Start Edit product det Page 
+**********************************************/
+.product_det{
+    .img{ 
+        position: relative;
+        .fav_butn{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 45px;
+            height: 45px;
+            background-color: #eee;
+            border-radius: 50%;
+            transition: all .3s linear;
+            &.active{
+                background-color: var(--secondary );
+                color: #fff ;
+            }
+        }
+    }
+    .social-links a{
+        margin: 0 5px;
+        color: #777;
+    }
+}
+
 /**********************************************
     Start Edit Modals
 **********************************************/
