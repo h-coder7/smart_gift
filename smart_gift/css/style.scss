@@ -604,8 +604,8 @@
             &.links-data{
                 .nav-link {
                     color: #333;
-                    padding: 1rem;
-                    border-radius: 25px;
+                    padding: 0.8rem 1rem;
+                    border-radius: 10px;
                     margin-bottom: 5px;
                     &.active{
                         background-color: var(--primary);
@@ -763,6 +763,59 @@ form{
         font-size: 15px;
     }
 }
+
+/**********************************************
+    Start Edit order details Page 
+**********************************************/
+.order_details{
+    .order_card{
+        padding: 4vw;
+        box-shadow: 3px 6px 15px 0 #eee;
+    }
+    .item {
+        margin-bottom: 15px;
+        position: relative;
+        .label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #888;
+        }
+        .content {
+            background-color: #F5F6F8 ;
+            border-radius: 5px;
+            padding: 15px 25px;
+            margin: 10px 0 0 0;
+            line-height: 1.8rem;
+            font-size: 15px;
+            color: #333;
+        }
+        .map-butn{
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            background-color: transparent;
+            .icon{
+                width: 25px;
+                height: 25px;
+                object-fit: contain;
+                margin-inline-end: 5px;
+            }
+        }
+    }
+    .table .inFlex {
+        width: fit-content;
+    }
+    .order-imgs-swiper .sec-img{
+        padding: 25px;
+        border-radius: 25px;
+        border: 1px solid #ddd;
+        transition: all .3s linear;
+        &:hover{
+            border: 1px solid var(--primary);
+        }
+    }
+}
+
 /**********************************************
     Start Edit Modals
 **********************************************/
@@ -781,23 +834,6 @@ form{
         object-fit: contain;
         margin: 0 auto 30px auto;  
         display: block;
-    }
-}
-
-.editProfModal{
-    .form-group{
-        .map-butn{
-            position: absolute;
-            left: 5px;
-            bottom: 5px;
-            background-color: transparent;
-            .icon{
-                width: 25px;
-                height: 25px;
-                object-fit: contain;
-                margin-inline-end: 5px;
-            }
-        }
     }
 }
 

@@ -75,6 +75,28 @@ var swiper = new Swiper('.prods-swiper', {
     }
 });
 
+var swiper = new Swiper('.order-imgs-swiper', {
+    loop: true,
+    speed: 900,
+    slidesPerView: 1,
+    spaceBetween: 15,
+    // autoplay: {
+    //     delay: 2500,
+    // },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    }
+});
+
 // ------------ SHOW HED PASS ----------
 $(document).ready(function() {
     $(".show_hide_password .show_pass").on('click', function(event) {

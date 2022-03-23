@@ -1025,8 +1025,8 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
 
 .profile-pg .prof-side .wrapper.links-data .nav-link {
   color: #333;
-  padding: 1rem;
-  border-radius: 25px;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
   margin-bottom: 5px;
 }
 
@@ -1218,6 +1218,70 @@ form .show_pass {
 }
 
 /**********************************************
+    Start Edit order details Page 
+**********************************************/
+.order_details .order_card {
+  padding: 4vw;
+  -webkit-box-shadow: 3px 6px 15px 0 #eee;
+          box-shadow: 3px 6px 15px 0 #eee;
+}
+
+.order_details .item {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.order_details .item .label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+}
+
+.order_details .item .content {
+  background-color: #F5F6F8;
+  border-radius: 5px;
+  padding: 15px 25px;
+  margin: 10px 0 0 0;
+  line-height: 1.8rem;
+  font-size: 15px;
+  color: #333;
+}
+
+.order_details .item .map-butn {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  background-color: transparent;
+}
+
+.order_details .item .map-butn .icon {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 5px;
+          margin-inline-end: 5px;
+}
+
+.order_details .table .inFlex {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.order_details .order-imgs-swiper .sec-img {
+  padding: 25px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.order_details .order-imgs-swiper .sec-img:hover {
+  border: 1px solid var(--primary);
+}
+
+/**********************************************
     Start Edit Modals
 **********************************************/
 .modal .modal-content {
@@ -1236,22 +1300,6 @@ form .show_pass {
      object-fit: contain;
   margin: 0 auto 30px auto;
   display: block;
-}
-
-.editProfModal .form-group .map-butn {
-  position: absolute;
-  left: 5px;
-  bottom: 5px;
-  background-color: transparent;
-}
-
-.editProfModal .form-group .map-butn .icon {
-  width: 25px;
-  height: 25px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-margin-end: 5px;
-          margin-inline-end: 5px;
 }
 
 .profile-avatar {
