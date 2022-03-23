@@ -1373,6 +1373,11 @@ form .show_pass {
   color: var(--secondary);
 }
 
+.content-pg .p {
+  line-height: 2.2;
+  color: #777;
+}
+
 /**********************************************
     Start Edit Modals
 **********************************************/
