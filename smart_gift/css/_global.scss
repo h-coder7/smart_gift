@@ -121,6 +121,7 @@ form{
     }
     .form-control{
         font-size: 14px;
+        border-radius: 8px;
         &:focus{
             outline: none !important;
             box-shadow: none !important;

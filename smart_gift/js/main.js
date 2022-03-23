@@ -13,6 +13,10 @@ $(document).ready(function () {
         live: false
     });
     wow.init();
+    //fav
+    $(`.fav_butn`).click(function() {
+        $(this).toggleClass(`active`);
+    });
     //fancybox
     $("[data-fancybox]").fancybox({
         selector: '[data-fancybox="images"]',
@@ -71,6 +75,21 @@ var swiper = new Swiper('.prods-swiper', {
     }
 });
 
+// ------------ SHOW HED PASS ----------
+$(document).ready(function() {
+    $(".show_hide_password .show_pass").on('click', function(event) {
+        event.preventDefault();
+        if($(this).siblings("input").attr("type") == "text"){
+            $(this).siblings("input").attr('type', 'password');
+            $(this).addClass( "fa-eye-slash" );
+            $(this).removeClass( "fa-eye" );
+        }else if($(this).siblings("input").attr("type") == "password"){
+            $(this).siblings("input").attr('type', 'text');
+            $(this).removeClass( "fa-eye-slash" );
+            $(this).addClass( "fa-eye" );
+        }
+    });
+}); 
 
 //Swiper 
 // var swiper = new Swiper(' .swiper-container', {
