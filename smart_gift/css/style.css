@@ -1282,6 +1282,88 @@ form .show_pass {
 }
 
 /**********************************************
+    Start Edit about Page 
+**********************************************/
+.about-pg .text-box {
+  padding: 4vw 0;
+  -webkit-padding-end: 4vw;
+          padding-inline-end: 4vw;
+}
+
+.about-pg .text-box .p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.about-pg .sec-img {
+  border-radius: 45px;
+  height: 500px;
+}
+
+.about-cards .about_card {
+  padding: 45px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  border-radius: 45px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.about-cards .about_card .icon-outer {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 20px auto;
+  -webkit-box-shadow: 3px 6px 15px 0 #ddd;
+          box-shadow: 3px 6px 15px 0 #ddd;
+}
+
+.about-cards .about_card .icon-outer .icon {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about-cards .about_card .content {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.about-cards .about_card .content .title {
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.about-cards .about_card .content .p {
+  margin-bottom: 0;
+}
+
+.about-cards .about_card:hover {
+  background-color: #fff;
+}
+
+.about-cards .about_card:hover .icon-outer .icon {
+  -webkit-animation: pulse 1s infinite both;
+          animation: pulse 1s infinite both;
+}
+
+.about-cards .about_card:hover .content .title {
+  color: var(--secondary);
+}
+
+/**********************************************
     Start Edit Modals
 **********************************************/
 .modal .modal-content {

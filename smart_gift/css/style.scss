@@ -817,6 +817,69 @@ form{
 }
 
 /**********************************************
+    Start Edit about Page 
+**********************************************/
+.about-pg{
+    .text-box{
+        padding: 4vw 0;
+        padding-inline-end: 4vw;
+        .p{
+            font-size: 16px;
+            line-height: 2;
+        }
+    }
+    .sec-img{
+        border-radius: 45px;
+        height: 500px;
+    }
+}
+
+.about-cards {
+    .about_card{
+        padding: 45px;
+        margin-bottom: 25px;
+        border: 1px solid #ddd;
+        border-radius: 45px;
+        transition: all .3s linear;
+        .icon-outer{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 2px solid var(--primary);
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px auto;
+            box-shadow: 3px 6px 15px 0 #ddd;
+            .icon{
+                width: 35px;
+                height: 35px;
+                object-fit: contain;
+            }
+        }
+        .content{
+            text-align: center;
+            padding: 0 2rem;
+            .title{
+                transition: all .3s linear;
+            }
+            .p{
+                margin-bottom: 0;
+            }
+        }
+        &:hover{
+            background-color: #fff;
+            .icon-outer .icon{
+                animation: pulse 1s infinite both;
+            }
+            .content .title{
+                color: var(--secondary) ;
+            }
+        }
+    }
+}
+/**********************************************
     Start Edit Modals
 **********************************************/
 .modal .modal-content {
@@ -884,3 +947,4 @@ form{
         }
     }
 }
+
