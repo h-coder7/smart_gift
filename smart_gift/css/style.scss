@@ -223,6 +223,29 @@
     }
 }
 
+.pagination-wrapper{
+    .pagination{
+        width: fit-content;
+        margin: auto;
+        .page-link {
+            border-radius: 8px !important;
+            background-color: transparent;
+            color: var(--secondary);
+            margin: 0 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            width: 45px;
+            height: 40px;
+            &:hover ,
+            &.active{
+                background-color: var(--secondary);
+                color: #fff !important;
+            }
+        }
+    }
+}
 /**********************************************
     Start Edit Home Page 
 **********************************************/

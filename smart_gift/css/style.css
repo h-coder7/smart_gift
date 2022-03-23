@@ -603,6 +603,37 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
   background: var(--primary);
 }
 
+.pagination-wrapper .pagination {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.pagination-wrapper .pagination .page-link {
+  border-radius: 8px !important;
+  background-color: transparent;
+  color: var(--secondary);
+  margin: 0 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  width: 45px;
+  height: 40px;
+}
+
+.pagination-wrapper .pagination .page-link:hover, .pagination-wrapper .pagination .page-link.active {
+  background-color: var(--secondary);
+  color: #fff !important;
+}
+
 /**********************************************
     Start Edit Home Page 
 **********************************************/
