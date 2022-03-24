@@ -1546,7 +1546,29 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
      object-fit: contain;
 }
 
-.profile-pg .tab.orders-tab .nav .nav-link {
+.profile-pg .tab.orders-tab .outer-nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-pg .tab.orders-tab .outer-nav .nav-link {
+  color: #444;
+  border-bottom: 1px solid transparent;
+}
+
+.profile-pg .tab.orders-tab .outer-nav .nav-link.active {
+  color: var(--primary);
+  font-weight: bold;
+  border: transparent;
+  border-bottom: 1px solid var(--primary);
+}
+
+.profile-pg .tab.orders-tab .outer-nav .nav-link:hover {
+  border-color: transparent;
+}
+
+.profile-pg .tab.orders-tab .inner-nav .nav-link {
   background-color: #f5f5f5;
   border-radius: 25px;
   padding: .5rem 1.5rem;
@@ -1555,7 +1577,7 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
   color: #444;
 }
 
-.profile-pg .tab.orders-tab .nav .nav-link.active {
+.profile-pg .tab.orders-tab .inner-nav .nav-link.active {
   color: #fff;
   background-color: var(--secondary) !important;
 }
@@ -1796,7 +1818,7 @@ form .show_pass {
 }
 
 .contact-pg .inner .contact_card {
-  background-color: #EBF6FF;
+  background-color: #DEE7EC;
   padding: 50px 35px;
   height: 100%;
 }
@@ -1947,6 +1969,10 @@ form .show_pass {
   padding: 0;
 }
 
+.delete_butn:hover {
+  background-color: #EBF6FF;
+}
+
 /**********************************************
     Start Edit Modals
 **********************************************/
@@ -1957,6 +1983,10 @@ form .show_pass {
 
 .modal .modal-content .modal-body {
   padding: 2rem;
+}
+
+.modal .modal-content .butn {
+  min-width: 140px;
 }
 
 .logoutModal .img {

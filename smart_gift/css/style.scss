@@ -1005,7 +1005,23 @@
             }
         }
         &.orders-tab{
-            .nav .nav-link{
+            .outer-nav {
+                justify-content: center;
+                .nav-link{
+                    color: #444;
+                    border-bottom: 1px solid transparent ;
+                    &.active{
+                        color: var(--primary);
+                        font-weight: bold;
+                        border: transparent;
+                        border-bottom: 1px solid var(--primary);
+                    }
+                    &:hover{
+                        border-color: transparent;
+                    }
+                }
+            }
+            .inner-nav .nav-link{
                 background-color: #f5f5f5;
                 border-radius: 25px;
                 padding: .5rem 1.5rem;
@@ -1213,7 +1229,7 @@ form{
         overflow: hidden;
         box-shadow: 3px 6px 15px 0 #eee;
         .contact_card{
-            background-color: #EBF6FF;
+            background-color: #DEE7EC;
             padding: 50px 35px;
             height: 100%;
             .contact-links a{
@@ -1336,6 +1352,9 @@ form{
     width: 35px;
     height: 35px;
     padding: 0;
+    &:hover{
+        background-color: #EBF6FF;
+    }
 }
 /**********************************************
     Start Edit Modals
@@ -1345,6 +1364,9 @@ form{
     border-radius: 25px;
     .modal-body{
         padding: 2rem;
+    }
+    .butn {
+        min-width: 140px;
     }
 }
 
