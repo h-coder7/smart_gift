@@ -1,7 +1,8 @@
 :root {
     --primary : #A5CD39;
     --secondary: #49AFD9;
-    --filterPrimary : invert(0%) sepia(100%) saturate(19%) hue-rotate(19deg) brightness(101%) contrast(106%);
+    --filterPrimary : invert(83%) sepia(22%) saturate(1288%) hue-rotate(25deg) brightness(91%) contrast(89%);
+    --filterSecondary: invert(63%) sepia(88%) saturate(729%) hue-rotate(166deg) brightness(91%) contrast(85%);
     --filterWhite : invert(99%) sepia(0%) saturate(4787%) hue-rotate(41deg) brightness(127%) contrast(96%);
 }
 *{
@@ -43,7 +44,7 @@ body{
     color: #888;
 }
 .color-dark{
-    color: #1B2021;
+    color: #195979;
 }
 .color-primary{
     color: var(--primary);

@@ -26,6 +26,11 @@ $(document).ready(function () {
     $(function () {
         $('[data-toggle="tooltip"]').tooltip();
     });
+    /* Shopping Cart Toggler */ 
+    $(`.cart_link`).click(function() {
+        $(`.shopping-cart`).toggleClass(`active`);
+        $(`.cart_link`).toggleClass(`active-btn`);
+    });
     /*Loading page */
     $(window).on("load", function(){
         $(".loading-page")
@@ -113,6 +118,28 @@ $(document).ready(function() {
     });
 }); 
 
+//Bank transfer 
+$(".bankTransfer-form").hide();
+$('input[type="radio"]').click(function() {
+    if ($(this).attr("value") == "bankTransfer") {
+        $(".bankTransfer-form").show();
+    } else {
+        $(".bankTransfer-form").hide();
+    }
+});
+
+//upload bank bill
+$('#companyFile #chooseFile').bind('change', function () {
+    var filename = $("#chooseFile").val();
+    if (/^\s*$/.test(filename)) {
+        $("#companyFile").removeClass('active');
+        $("#companyFile #noFile").text("No file chosen..."); 
+    }
+    else {
+        $("#companyFile").addClass('active');
+        $("#companyFile #noFile").text(filename.replace("C:\\fakepath\\", "")); 
+    }
+});
 //Swiper 
 // var swiper = new Swiper(' .swiper-container', {
 //     loop: true,

@@ -9,7 +9,7 @@
     <meta name="keyword" content="">
     <meta name="author" content="Wafaa Hegazy">
     <!--Page Name-->
-    <title>الإهداء الئكي</title>
+    <title>الإهداء الذكي</title>
     <!--Page Icon-->
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
     <!--Bootstrap with RTL-->
@@ -43,11 +43,69 @@
                     </div>
                     <div class="butns inFlex justify-content-end">
                         <a href="#" class="butn secondary_butn">ENG</a>
-                        <a href="#" class="cart_link">
-                            <img src="images/icons/cart.svg" alt="" class="icon" />
-                            <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">9</span>
-                        </a>
+                        <div class="cart_wrapper">
+                            <a href="#" class="cart_link">
+                                 <img src="images/icons/cart.png" alt="" class="icon"/>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">9</span>
+                            </a>
+                            <!--Start shopping-cart-->
+                            <div class="shopping-cart">
+                                <div class="cart-header">
+                                    <span class="icon">
+                                        <i class="fas fa-shopping-cart"></i> <span class="num">3</span>
+                                    </span>
+                                    <h6 class="total">الاجمالي: <b>$250.00</b></h6>
+                                </div>
+                                <div class="cart-body">
+                                    <a href="#" class="d-block">
+                                        <div class="item">
+                                            <img src="images/prod-1.png" alt="" class="prod-img">
+                                            <div class="prod-det">
+                                                <h6 class="prod-name"> إسم المنتج </h6>
+                                                <span class="categ-name">التصنيف <small>الكمية: 1</small></span>
+                                            </div>
+                                            <button class="delete-btn">
+                                                 <img src="images/icons/basket.png" alt="" class="sm-icon"/>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="d-block">
+                                        <div class="item">
+                                            <img src="images/prod-1.png" alt="" class="prod-img">
+                                            <div class="prod-det">
+                                                <h6 class="prod-name"> إسم المنتج </h6>
+                                                <span class="categ-name">التصنيف <small>الكمية: 1</small></span>
+                                            </div>
+                                            <button class="delete-btn">
+                                                 <img src="images/icons/basket.png" alt="" class="sm-icon"/>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="d-block">
+                                        <div class="item">
+                                            <img src="images/prod-1.png" alt="" class="prod-img">
+                                            <div class="prod-det">
+                                                <h6 class="prod-name"> إسم المنتج </h6>
+                                                <span class="categ-name">التصنيف <small>الكمية: 1</small></span>
+                                            </div>
+                                            <button class="delete-btn">
+                                                 <img src="images/icons/basket.png" alt="" class="sm-icon"/>
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <div class="btns-wrapper">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <a href="cart.html" class="butn gray_butn w-100">سلة التسوق</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="payment2.html" class="butn primary_butn w-100">إتمام الطلب</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -56,11 +114,9 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="images/logo.svg" alt="" class="logo" />
+                    <img src="images/logo.svg" alt="" class="logo"/>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -87,17 +143,7 @@
                             <a class="nav-link" href="#">إتصل بنا</a>
                         </li>
                     </ul>
-                    <div class="dropdown">
-                        <button class="butn primary_butn inFlex dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-user"></i>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">تسجيل الدخول</a></li>
-                          <li><a class="dropdown-item" href="#">إنشاء حساب</a></li>
-                          <li><a class="dropdown-item" href="#">الملف الشخصي</a></li>
-                          <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
-                        </ul>
-                    </div>
+                     
                 </div>
             </div>
         </nav>
@@ -134,16 +180,15 @@
                             <div class="contact_card">
                                 <h4 class="sec-title mb-5"><b>معلومات التواصل</b></h4>
                                 <div class="contact-links mt-5">
-                                    <a href="#"><i class="fa-solid fa-phone-flip"></i> +966-123456789</a>
-                                    <a href="#"><i class="fa-solid fa-mobile-screen-button"></i>+966-48451659</a>
-                                    <a href="#"><i class="fa-solid fa-envelope"></i> info@mail.com</a>
-                                    <a href="#"><i class="fa-solid fa-location-dot"></i> تفاصيل العنوان تكتب هنا</a>
+                                    <a href="#"><img src="images/icons/phone.png" alt="" class="sm-icon"/> +966-123456789</a>
+                                    <a href="#"><img src="images/icons/mail.png" alt="" class="sm-icon"/> info@mail.com</a>
+                                    <a href="#"><img src="images/icons/map.png" alt="" class="sm-icon"/> تفاصيل العنوان تكتب هنا</a>
                                 </div>
-                                <div class="social-links mt-5">
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <div class="social-links mt-5 d-flex">
+                                    <a href="#"><img src="images/icons/social-1.svg" alt="" class="sm-icon filterSecondary"/></a>
+                                    <a href="#"><img src="images/icons/social-2.svg" alt="" class="sm-icon filterSecondary"/></a>
+                                    <a href="#"><img src="images/icons/social-3.svg" alt="" class="sm-icon filterSecondary"/></a>
+                                    <a href="#"><img src="images/icons/social-2.svg" alt="" class="sm-icon filterSecondary"/></a>
                                 </div>
                       
                             </div>
@@ -219,17 +264,22 @@
         </section>
     </main>
     <!-- Start footer -->
-    <footer class="footer section">
+     <footer class="footer section">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-3 col-md-6">
                     <div class="content">
                         <img src="images/logo2.svg" alt="" class="logo m-auto mb-4" />
                         <div class="social-links text-center">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#">
+                                <img src="images/icons/social-1.svg" alt="" class="icon filterWhite"/>
+                            </a>
+                            <a href="#">
+                                <img src="images/icons/social-2.svg" alt="" class="icon filterWhite"/>
+                            </a>
+                            <a href="#">
+                                <img src="images/icons/social-3.svg" alt="" class="icon filterWhite"/>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -257,8 +307,8 @@
                     <div class="content">
                         <h5 class="title sec-title text-white mb-5"><b>تواصل معنا</b></h5>
                         <div class="links">
-                            <a href="#"><i class="fa-solid fa-phone-flip"></i> +20123456789</a>
-                            <a href="#"> <i class="fa-solid fa-envelope"></i> test@mail.com</a>
+                            <a href="#"><img src="images/icons/call.svg" alt="" class="filterWhite icon"/> +20123456789</a>
+                            <a href="#"> <img src="images/icons/mail.svg" alt="" class="filterWhite icon"/> test@mail.com</a>
                         </div>
                     </div>
                 </div>
