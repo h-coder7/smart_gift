@@ -446,12 +446,14 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
   border-radius: 10px;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
+  visibility: hidden;
   opacity: 0;
   -webkit-transition: all .5s linear;
   transition: all .5s linear;
 }
 
 .navs-container .top-nav .cart_wrapper .shopping-cart.active {
+  visibility: visible;
   opacity: 1;
   -webkit-transform: translateY(40px);
           transform: translateY(40px);
