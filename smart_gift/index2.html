@@ -37,8 +37,8 @@
             <div class="container">
                 <div class="in-flex">
                     <div class="butns inFlex">
-                        <a href="login.html" class="butn primary_butn mx-1">تسجيل الدخول</a>
-                        <a href="register.html" class="butn gray_butn mx-1">إنشاء حساب</a>
+                        <a href="login.html" class="butn primary_butn mx-1"> <i class="bi bi-box-arrow-in-left"></i> تسجيل الدخول</a>
+                        <a href="register.html" class="butn gray_butn mx-1"> <i class="bi bi-person"></i> إنشاء حساب</a>
                     </div>
                     <div class="butns inFlex justify-content-end">
                         <a href="#" class="butn secondary_butn">ENG</a>
@@ -119,7 +119,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">الرئيسية</a>
                         </li>
@@ -442,14 +442,15 @@
         <!-- Modal -->
         <div class="modal productModal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
+                <div class="modal-content p-0">
+                    <!-- <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">شراء سريع</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
+                    </div> -->
+                    <div class="modal-body p-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="product_det order_det payment">
-                            <div class="order_card mb-5">
+                            <div class="order_card">
                                 <div class="order_body">
                                     <div class="order_box">
                                         <div class="row align-items-center">
@@ -469,6 +470,9 @@
                                                         </a>
                                                         <a href="#">
                                                             <img src="images/icons/social-3.svg" alt="" class="icon" />
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="images/icons/social-4.svg" alt="" class="icon" />
                                                         </a>
                                                     </div>
                                                 </div>
@@ -504,107 +508,158 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card text-center rounded p-0 mb-5">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <h3>بيانات العنوان</h3>
-                                        <div class="form-group form-floating mt-5">
-                                            <select class="form-control form-select">
-                                                <option>العنوان هنا</option>
-                                            </select>
-                                            <label for="floatingInput">عنوان مسجل مسبقا</label>
+                            <div class="order_form">
+                                <div class="order_card mb-5">
+                                    <div class="in-flex order_header px-4">
+                                        <div class="crd_det d-flex justify-content-center">
+                                            <div class="icon me-3 flex-shrink-0">
+                                                <img src="images/icons/musq.svg" alt="">
+                                            </div>
+                                            <div class="crd_inf">
+                                                <p class="mb-0">إسم المسجد</p>
+                                                <h6 class="fw-bold color-secondary">مسجد الرحمة</h6>
+                                            </div>
                                         </div>
-                                        <a href="#" class="butn gray_butn m-auto mt-4" data-bs-toggle="modal" data-bs-target="#addLocModal"><i class="fa-solid fa-circle-plus"></i> إضافة عنوان آخر</a>
+                                        <div class="d-block">
+                                            <div class="form-check ">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">
+                                                    <span><img src="images/icons/man.png" alt="" class="radio_icon"/> مصلي الرجال</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">
+                                                    <span><img src="images/icons/woman.png" alt="" class="radio_icon"/> مصلي النساء</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order_footer">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-11">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-lg-6">
+                                                            <div class="crd_det d-flex justify-content-center pe-5">
+                                                                <div class="icon me-3 flex-shrink-0">
+                                                                    <img src="images/icons/user.svg" alt="">
+                                                                </div>
+                                                                <div class="crd_inf">
+                                                                    <p class="mb-0">إسم المستلم</p>
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="crd_det d-flex justify-content-center pe-5">
+                                                                <div class="icon me-3 flex-shrink-0">
+                                                                    <img src="images/icons/mobb.svg" alt="">
+                                                                </div>
+                                                                <div class="crd_inf">
+                                                                    <p class="mb-0">جوال المستلم</p>
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card text-center rounded p-0 mb-5">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-12">
-                                        <h3>طريقة الدفع</h3>
-                                        <div class="payment_way mt-5">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="payment" id="payment1" value="option1">
-                                                <label class="form-check-label" for="payment1">
-                                                    <div class="img">
-                                                        <img src="images/pay/3.png" alt="">
-                                                        <h6>فيزا</h6>
-                                                    </div>
-                                                </label>
+                                <div class="card text-center rounded p-0 mb-5">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-12">
+                                            <h3>طريقة الدفع</h3>
+                                            <div class="payment_way mt-5">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="payment" id="payment1" value="option1">
+                                                    <label class="form-check-label" for="payment1">
+                                                        <div class="img">
+                                                            <img src="images/pay/3.png" alt="">
+                                                            <h6>فيزا</h6>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="payment" id="payment2" value="option2">
+                                                    <label class="form-check-label" for="payment2">
+                                                        <div class="img">
+                                                            <img src="images/pay/2.png" alt="">
+                                                            <h6>أبل باي</h6>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="payment" id="payment3" value="option2">
+                                                    <label class="form-check-label" for="payment3">
+                                                        <div class="img">
+                                                            <img src="images/pay/4.png" alt="">
+                                                            <h6>ماستر كارد</h6>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="payment" id="payment4" value="option2">
+                                                    <label class="form-check-label" for="payment4">
+                                                        <div class="img">
+                                                            <img src="images/pay/1.png" alt="">
+                                                            <h6>مدي</h6>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="payment" id="payment5" value="bankTransfer">
+                                                    <label class="form-check-label" for="payment5">
+                                                        <div class="img">
+                                                            <img src="images/pay/transfer.png" alt="">
+                                                            <h6>التحويل البنكي</h6>
+                                                        </div>
+                                                    </label>
+                                                </div>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="payment" id="payment2" value="option2">
-                                                <label class="form-check-label" for="payment2">
-                                                    <div class="img">
-                                                        <img src="images/pay/2.png" alt="">
-                                                        <h6>أبل باي</h6>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="payment" id="payment3" value="option2">
-                                                <label class="form-check-label" for="payment3">
-                                                    <div class="img">
-                                                        <img src="images/pay/4.png" alt="">
-                                                        <h6>ماستر كارد</h6>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="payment" id="payment4" value="option2">
-                                                <label class="form-check-label" for="payment4">
-                                                    <div class="img">
-                                                        <img src="images/pay/1.png" alt="">
-                                                        <h6>مدي</h6>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="payment" id="payment5" value="bankTransfer">
-                                                <label class="form-check-label" for="payment5">
-                                                    <div class="img">
-                                                        <img src="images/pay/transfer.png" alt="">
-                                                        <h6>التحويل البنكي</h6>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="bankTransfer-form mt-5">
-                                            <table class="table mb-4">
-                                                <thead>
-                                                    <tr>
-                                                        <th>إسم الحساب</th>
-                                                        <th>رقم الحساب</th>
-                                                        <th>رقم الآيبان</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>الاسم هنا</td>
-                                                        <td>123456789</td>
-                                                        <td>123456789</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>الاسم هنا</td>
-                                                        <td>123456789</td>
-                                                        <td>123456789</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>الاسم هنا</td>
-                                                        <td>123456789</td>
-                                                        <td>123456789</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <h5 class="heading mb-4 color-gray2"><b>أدخل  إيصال التحويل  </b></h5>
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <div class="file-upload" id="companyFile">
-                                                            <div class="file-select">
-                                                                <div class="file-select-button" id="fileName"><i class="fa-solid fa-link"></i></div>
-                                                                <div class="file-select-name" id="noFile">إرفاق إيصال التحويل</div>
-                                                                <input type="file" name="chooseFile" id="chooseFile">
+                                            <div class="bankTransfer-form mt-5">
+                                                <table class="table mb-4">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>إسم الحساب</th>
+                                                            <th>رقم الحساب</th>
+                                                            <th>رقم الآيبان</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>الاسم هنا</td>
+                                                            <td>123456789</td>
+                                                            <td>123456789</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>الاسم هنا</td>
+                                                            <td>123456789</td>
+                                                            <td>123456789</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>الاسم هنا</td>
+                                                            <td>123456789</td>
+                                                            <td>123456789</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <h5 class="heading mb-4 color-gray2"><b>أدخل  إيصال التحويل  </b></h5>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <div class="file-upload" id="companyFile">
+                                                                <div class="file-select">
+                                                                    <div class="file-select-button" id="fileName"><i class="fa-solid fa-link"></i></div>
+                                                                    <div class="file-select-name" id="noFile">إرفاق إيصال التحويل</div>
+                                                                    <input type="file" name="chooseFile" id="chooseFile">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -613,47 +668,49 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card text-center rounded  p-0 mb-5">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <h3>كوبون الخصم</h3>
-                                        <div class="disc_copon mt-5 mb-4">
-                                            <div class="form-group mb-3">
-                                                <input type="text" class="form-control" placeholder="...أدخل الكود هنا" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                                                <button class="butn secondary_butn px-5" type="button" id="button-addon1">تطبيق</button>
+                                <div class="card text-center rounded  p-0 mb-5">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8">
+                                            <h3>كوبون الخصم</h3>
+                                            <div class="disc_copon mt-5 mb-4">
+                                                <div class="form-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="...أدخل الكود هنا" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                                    <button class="butn secondary_butn px-5" type="button" id="button-addon1">تطبيق</button>
+                                                </div>
                                             </div>
+                                            <h5> نسبة الخصم <span class="color-primary"> 15% </span></h5>
                                         </div>
-                                        <h5> نسبة الخصم <span class="color-primary"> 15% </span></h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card text-center rounded p-0">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-8">
-                                        <h3>تفاصيل الدفع</h3>
-                                        <div class="pay_price mt-5">
-                                            <ul>
-                                                <li>
-                                                    <span>المجموع الفرعي</span>
-                                                    <span>500 SR</span>
-                                                </li>
-                                                <li>
-                                                    <span>رسوم التوصيل</span>
-                                                    <span>5 SR</span>
-                                                </li>
-                                                <li>
-                                                    <span>ضريبة القيمة المضافة</span>
-                                                    <span> 15 %</span>
-                                                </li>
-                                                <li class="total">
-                                                    <span>المجموع الكلي</span>
-                                                    <span>500 SR</span>
-                                                </li>
-                                            </ul>
+                            <div class="order_table">
+                                <div class="card text-center rounded p-0">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-11">
+                                            <h3>تفاصيل الدفع</h3>
+                                            <div class="pay_price mt-5">
+                                                <ul>
+                                                    <li>
+                                                        <span>المجموع الفرعي</span>
+                                                        <span>500 SR</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>رسوم التوصيل</span>
+                                                        <span>5 SR</span>
+                                                    </li>
+                                                    <li>
+                                                        <span>ضريبة القيمة المضافة</span>
+                                                        <span> 15 %</span>
+                                                    </li>
+                                                    <li class="total">
+                                                        <span>المجموع الكلي</span>
+                                                        <span>500 SR</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <a href="index.html" class="butn primary_butn py-3 mt-4 px-5 fw-bold d-inline-block w-100 fs-4">   إتمام الدفع </a>
+    
                                         </div>
-                                        <a href="index2.html" class="butn primary_butn py-3 mt-4 px-5 fw-bold d-inline-block w-100 fs-4">   إتمام الدفع </a>
-
                                     </div>
                                 </div>
                             </div>
@@ -664,15 +721,13 @@
         </div>
         <div class="modal editProfModal fade" id="addLocModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">إضافة عنوان جديد</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+                <div class="modal-content p-0">
                     <div class="modal-body">
+                        <button type="button" class="btn-close btn_close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <form>
-                            <div class="row col-md-10 m-auto">
-                                <div class="col-md-12">
+                            <h3>إضافة عنوان جديد</h3>
+                            <div class="row col-md-12 m-auto">
+                                <div class="col-md-6">
                                     <div class="form-group form-floating mb-3">
                                         <select class="form-control form-select">
                                             <option>الرياض</option>
@@ -680,7 +735,7 @@
                                         <label for="floatingInput">المدينه</label>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <div class="form-group form-floating mb-3">
                                         <input type="email" class="form-control" id="floatingInput" placeholder="تفاصيل العنوان">
                                         <label for="floatingInput">العنوان</label>
@@ -718,6 +773,12 @@
                             <a href="https://www.facebook.com/" target="_blank">
                                 <img src="images/icons/social-3.svg" alt="" class="icon filterWhite" />
                             </a>
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <img src="images/icons/social-4.svg" alt="" class="icon filterWhite" />
+                            </a>
+                            <a href="https://www.google.com/maps/place/Mecca+Saudi+Arabia/@21.4362767,39.7064578,11z/data=!3m1!4b1!4m5!3m4!1s0x15c21b4ced818775:0x98ab2469cf70c9ce!8m2!3d21.3890824!4d39.8579118" target="_blank">
+                                <img src="images/icons/social-5.svg" alt="" class="icon filterWhite" />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -733,10 +794,15 @@
                     <div class="content">
                         <h5 class="title sec-title text-white mb-5"><b>روابط مباشرة</b></h5>
                         <div class="links">
-                            <a href="#">منتجاتنا</a>
-                            <a href="#">الأكثر مبيعا</a>
-                            <a href="#">إتصل بنا</a>
-                            <a href="#">طريقة عملنا</a>
+                            <!-- <a href="products.html">منتجاتنا</a>
+                            <a href="products.html">الأكثر مبيعا</a>
+                            <a href="contact.html">إتصل بنا</a>
+                            <a href="#">طريقة عملنا</a> -->
+                            <a href="terms.html">الشروط والاحكام</a>
+                            <a href="terms.html">سياسية الخصوصية</a>
+                            <a href="contact.html">اتصل بنا</a>
+                            <a href="about.html">من نحن</a>
+                            <a href="index2.html">التوصيل للمنازل</a>
                         </div>
                     </div>
                 </div>
@@ -753,6 +819,18 @@
         </div>
         <p class="foot_p">جميع الحقوق محفوظة@الإهداء للمياه 2021 تصميم وبرمجة <a href="#" class="text-white">اليوم هوست</a></p>
     </footer>
+    <!-- --------- mob bar ---------- -->
+    <ul class="mob-bottom-navigation d-flex d-lg-none">
+        <li>
+          <a href="#"> <i class="fas fa-home"></i> الرئيسية</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-th-large"></i> المنتجات</a>
+        </li>
+        <li>
+          <a href="#"> <i class="fas fa-phone"></i> تواصل معنا</a>
+        </li>
+    </ul>
     <!--Scroll to top button-->
     <div class="progress-wrap ">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 220.587;"></path></svg>

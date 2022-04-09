@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 :root {
   --primary: #A5CD39;
   --secondary: #49AFD9;
@@ -373,7 +374,7 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
    Start Edit Navbar & Footer
 **********************************************/
 .navs-container .top-nav {
-  padding: 20px 0;
+  padding: 5px 0;
   position: relative;
   z-index: 999;
 }
@@ -385,8 +386,8 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
 }
 
 .navs-container .top-nav .cart_link .icon {
-  width: 28px;
-  height: 28px;
+  width: 35px;
+  height: 35px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -424,7 +425,7 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
 }
 
 .navs-container .top-nav .butn {
-  padding: 0.6rem 1rem !important;
+  padding: 8px 1rem !important;
 }
 
 .navs-container .top-nav .cart_wrapper {
@@ -553,7 +554,7 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
 
 .navs-container .navbar {
   background-color: #F5F6F8;
-  padding: 25px 15px;
+  padding: 10px 15px;
   position: relative;
   z-index: 99;
 }
@@ -654,7 +655,8 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
 }
 
 .navs-container .bottom-nav {
-  background-color: var(--secondary);
+  background: linear-gradient(-80deg, #49afd9, #a5cd39aa);
+  font-weight: bold;
 }
 
 .navs-container .bottom-nav .p {
@@ -723,6 +725,47 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
   margin-top: 25px;
 }
 
+.mob-bottom-navigation {
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--primary);
+  margin: 0;
+  padding: 0 0 5px;
+}
+
+.mob-bottom-navigation li {
+  width: 100%;
+  text-align: center;
+}
+
+.mob-bottom-navigation li a {
+  color: #fff;
+  width: 100%;
+  padding: 0;
+  font-weight: bold;
+  font-size: 12px;
+  background: var(--primary);
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  padding: 18px 5px;
+  margin-top: -15px;
+}
+
+.mob-bottom-navigation li a:hover {
+  color: #000 !important;
+}
+
+.mob-bottom-navigation li a i {
+  display: block;
+  margin-bottom: 10px;
+}
+
 /**********************************************
     Start Public Classes
 **********************************************/
@@ -736,6 +779,11 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
   padding: .6rem 2rem;
   font-size: 15px;
   display: block;
+}
+
+.butn .bi {
+  position: relative;
+  top: 2px;
 }
 
 .butn i {
@@ -854,6 +902,34 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
 /**********************************************
     Start Edit Home Page 
 **********************************************/
+header.section {
+  padding: 0 !important;
+  margin-bottom: 30px;
+}
+
+header.section .container-fluid {
+  padding: 0;
+}
+
+header.section .head_prod {
+  top: -150px;
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  padding: 15px 30px;
+  -webkit-box-shadow: 0 -10px 20px #0002;
+          box-shadow: 0 -10px 20px #0002;
+  border-radius: 30px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+header.section .map_container:hover ~ .head_prod {
+  top: 30px;
+  margin-bottom: 0;
+}
+
 .products-sec .prod_card {
   background-color: #EBF6FF;
   padding: 25px;
@@ -911,13 +987,14 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
 }
 
 .products-sec .prod_card .card-body {
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 2rem 1rem 1rem;
   text-align: center;
 }
 
 .products-sec .prod_card .card-body .butn {
   font-weight: bold;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 10px;
+  font-size: 13px;
 }
 
 .products-sec .prod_card:hover {
@@ -935,13 +1012,89 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
 }
 
 .productModal .order_card {
-  padding: 0 !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 
 .productModal .order_card .img {
   height: 280px;
+}
+
+.productModal .order_form {
+  padding: 30px;
+  background-color: #f5faff;
+}
+
+.productModal .order_form .form-check .form-check-label .img img {
+  background-color: #fff !important;
+}
+
+.productModal .order_form .order_card,
+.productModal .order_form .card {
+  background: transparent !important;
+}
+
+.productModal .order_form .order_card .form-control,
+.productModal .order_form .card .form-control {
+  background: transparent !important;
+}
+
+.productModal .order_form .order_card .disc_copon .form-control,
+.productModal .order_form .card .disc_copon .form-control {
+  background: #fff !important;
+}
+
+.productModal .order_table {
+  padding: 30px;
+}
+
+.productModal .order_table .pay_price ul li {
+  background: #f5faff;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.productModal .order_table .pay_price ul li:last-of-type {
+  border: 0;
+}
+
+.productModal .btn-close {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--primary);
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  opacity: 1;
+}
+
+.modal .btn_close {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--primary);
+  padding: 12px;
+  font-size: 12px;
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  opacity: 1;
+}
+
+.editProfModal .modal-body h3 {
+  color: var(--primary);
+  font-size: 21px;
+  margin-bottom: 25px;
+  padding: 5px;
+}
+
+.editProfModal .modal-body iframe {
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 20px #0001;
+          box-shadow: 0 0 20px #0001;
 }
 
 .store-sec .item {
@@ -1153,7 +1306,8 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
 .order_det .order_body .order_box .img {
   border-radius: 40px;
   overflow: hidden;
-  border: 20px solid #EBF6FF;
+  -webkit-box-shadow: 5px 5px 30px #0001;
+          box-shadow: 5px 5px 30px #0001;
 }
 
 .order_det .order_body .order_box .img img {
@@ -1595,6 +1749,76 @@ form .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
 
 .profile-pg .prod_card .img-box {
   height: 180px;
+}
+
+.profile-pg .notifications .noti-item {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 15px 0px #ddfdfc;
+          box-shadow: 0px 5px 15px 0px #ddfdfc;
+  padding: 25px 20px;
+  background-color: #F8F8F8;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.profile-pg .notifications .noti-item .dateTime p {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.profile-pg .notifications .noti-item .dateTime p i {
+  color: #25B0A8;
+  margin: 0 5px;
+}
+
+.profile-pg .notifications .noti-item .noti-body {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.profile-pg .notifications .noti-item .noti-body .icon {
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.profile-pg .notifications .noti-item .noti-body .text {
+  margin: 0 20px;
+}
+
+.profile-pg .notifications .noti-item .noti-body .text .title {
+  font-weight: bold;
+}
+
+.profile-pg .notifications .noti-item .noti-body .text .p {
+  margin-bottom: 0;
+}
+
+.profile-pg .notifications .noti-item.alertItem {
+  background-color: #E5EFFA;
+  -webkit-box-shadow: 0px 5px 15px 0px #e6eef7;
+          box-shadow: 0px 5px 15px 0px #e6eef7;
+}
+
+.profile-pg .notifications .noti-item.canceledItem {
+  background-color: #FCEDEA;
+  -webkit-box-shadow: 0px 5px 15px 0px #ffecec;
+          box-shadow: 0px 5px 15px 0px #ffecec;
+}
+
+.profile-pg .notifications .deleteButton {
+  background-color: transparent;
+  border: transparent;
+  color: #ccc;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  font-size: 20px;
+}
+
+.profile-pg .notifications .deleteButton:hover {
+  color: #ce3b3b;
 }
 
 .table {

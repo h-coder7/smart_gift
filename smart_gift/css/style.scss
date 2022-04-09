@@ -1,21 +1,23 @@
 @import 'global';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 /**********************************************
    Start Edit Navbar & Footer
 **********************************************/
 
+
 //start Navbar
 .navs-container{
     .top-nav{
-        padding: 20px 0;
+        padding: 5px 0;
         position: relative;
         z-index: 999;
         .cart_link{
             position: relative;
             margin-inline-start: 15px;
             .icon{
-                width: 28px;
-                height: 28px;
+                width: 35px;
+                height: 35px;
                 object-fit: contain;
             }
             &::after{
@@ -48,7 +50,7 @@
             }
         }
         .butn {
-            padding: 0.6rem 1rem !important;
+            padding: 8px 1rem !important;
         }
         .cart_wrapper{
             position: relative;
@@ -147,7 +149,7 @@
     }
     .navbar{
         background-color: #F5F6F8;
-        padding: 25px 15px;
+        padding: 10px 15px;
         position: relative;
         z-index: 99;
         .nav-link {
@@ -233,7 +235,9 @@
         }
     }
     .bottom-nav{
-        background-color: var(--secondary);
+        // background-color: var(--secondary);
+        background: linear-gradient(-80deg, #49afd9, #a5cd39aa);
+        font-weight: bold;
         .p{
             color: #fff;
         }
@@ -291,6 +295,48 @@
     }
 }
 
+// --------- mobile nav ---------
+.mob-bottom-navigation {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0 0 5px;
+}
+
+.mob-bottom-navigation li {
+    width: 100%;
+    text-align: center;
+}
+
+.mob-bottom-navigation li a {
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    font-weight: bold;
+    font-size: 12px;
+    background: var(--primary);
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 18px 5px;
+    margin-top: -15px;
+    &:hover{
+        color: #000 !important;
+    }
+}
+
+.mob-bottom-navigation li a i {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
 /**********************************************
     Start Public Classes
 **********************************************/
@@ -302,6 +348,10 @@
     padding: .6rem 2rem;
     font-size: 15px;
     display: block;
+    .bi{
+        position: relative;
+        top: 2px;
+    }
     i{
         margin-inline-end: 5px;
     }
@@ -401,7 +451,32 @@
 /**********************************************
     Start Edit Home Page 
 **********************************************/
+header.section{
+    padding: 0 !important;
+    margin-bottom: 30px;
+    .container-fluid{
+        padding: 0;
+    }
+    .head_prod{
+        top: -150px;
+        margin-bottom: -100px;
+        position: relative;
+        z-index: 10;
+        background-color: #fff;
+        padding: 15px 30px;
+        box-shadow: 0 -10px 20px #0002;
+        border-radius: 30px;
+        transition: all 0.4s ease;
+        .prod_card{
+            // box-shadow: 0 0 20px #0002;
+        }
+    }
 
+    .map_container:hover ~ .head_prod{
+        top: 30px;
+        margin-bottom: 0;
+    }
+}
 //start products-sec
 .products-sec{
     .prod_card{
@@ -448,11 +523,12 @@
             }
         }
         .card-body{
-            padding: 2rem 2rem 1rem 2rem;
+            padding: 2rem 1rem 1rem;
             text-align: center;
             .butn {
                 font-weight: bold;
-                padding: 0.8rem 1rem;
+                padding: 0.8rem 10px;
+                font-size: 13px;
             }
         }
         &:hover{
@@ -469,10 +545,87 @@
 
 .productModal{
     .order_card {
-        padding: 0 !important;
         box-shadow: none !important;
         .img {
             height: 280px;
+        }
+    }
+
+    .order_form{
+        padding: 30px;
+        background-color: #f5faff;
+        .form-check .form-check-label .img img{
+            background-color: #fff !important;
+        }
+        .order_card,
+        .card {
+            // padding: 30px 15px !important;
+            background: transparent !important;
+            .form-control{
+                background: transparent !important;
+            }
+            .disc_copon{
+                .form-control{
+                    background: #fff !important;
+                }
+            }
+        }
+    }
+
+    .order_table{
+        padding: 30px;
+        .pay_price ul li{
+            background: #f5faff;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 10px 0;
+            &:last-of-type{
+                // background-color: var(--secondary);
+                // color: #fff;
+                border: 0;
+            }
+        }
+    }
+
+    .btn-close{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: var(--primary);
+        padding: 12px;
+        font-size: 12px;
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        opacity: 1;
+    }
+}
+
+.modal{
+    .btn_close{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: var(--primary);
+        padding: 12px;
+        font-size: 12px;
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        opacity: 1;
+    }
+}
+
+.editProfModal{
+    .modal-body{
+        h3{
+            color: var(--primary);
+            font-size: 21px;
+            margin-bottom: 25px;
+            padding: 5px;
+        }
+        iframe{
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 20px #0001;
         }
     }
 }
@@ -652,7 +805,8 @@
             .img{
                 border-radius: 40px;
                 overflow: hidden;
-                border: 20px solid #EBF6FF;
+                // border: 20px solid #EBF6FF;
+                box-shadow: 5px 5px 30px #0001;
                 img{
                     width: 100%;
                     height: 100%;
@@ -1044,6 +1198,63 @@
         padding: 10px;
         .img-box {
             height: 180px;
+        }
+    }
+    .notifications{
+        .noti-item{
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px 0px #ddfdfc;
+            padding: 25px 20px;
+            background-color: #F8F8F8;
+            margin-bottom: 25px;
+            position: relative;
+            .dateTime{
+                p{
+                    margin: 0 10px;
+                    display: inline-block;
+                    i{
+                        color: #25B0A8;
+                        margin: 0 5px;
+                    }
+                }
+            }
+            .noti-body{
+                display: inline-flex;
+                .icon{
+                    width: 50px;
+                    object-fit: contain;
+                }
+                .text{
+                    margin: 0 20px;
+                    .title{
+                        font-weight: bold;
+                    }
+                    .p{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+          
+            &.alertItem{
+                background-color: #E5EFFA;
+                box-shadow: 0px 5px 15px 0px #e6eef7;
+            }
+            &.canceledItem{
+                background-color: #FCEDEA;
+                box-shadow: 0px 5px 15px 0px #ffecec;
+            }
+        }
+        .deleteButton{
+            background-color: transparent;
+            border: transparent;
+            color: #ccc;
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            font-size: 20px;
+            &:hover{
+                color: rgb(206, 59, 59);
+            }
         }
     }
 }

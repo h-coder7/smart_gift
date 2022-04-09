@@ -12,18 +12,107 @@
 {
 
 }
-@media (min-width: 769px) and (max-width: 992px)
-{
-
+@media (min-width: 769px) and (max-width: 992px){
+    
 }
-@media(max-width:992px)
-{
+@media(max-width:992px){
+    body{
+        padding-bottom: 60px;
+    }
+    .section{
+        padding: 40px 0;
+    }
+    .mb-5{
+        margin-bottom: 30px !important;
+    }
+    .products-sec .prod_card .card-body .butn {
+        font-weight: bold;
+        padding: 0.8rem 10px;
+        font-size: 11px;
+        margin-top: 5px !important;
+    }
+    .store-sec .item .arrow,
+    .pg-heading .shape2{
+        display: none;
+    }
 
+    .store-sec .col-md-6.mt-5.pt-5{
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .newsletter-sec .form-group{
+        margin-top: 20px;
+    }
+
+    .pg-heading .links{
+        justify-content: center;
+    }
+
+    .pg-heading .links li.active{
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .modal .modal-content .modal-body {
+        padding: 2rem 0;
+    }
+
+    header.section .head_prod{
+        top: 0;
+        margin-bottom: 0;
+        padding: 0 10px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .navs-container .top-nav{
+        padding: 10px 0;
+    }
+
+    .top-nav .butns{
+        width: max-content;
+    }
+
+    .top-nav .butns .butn{
+        font-size: 13px;
+    }
+
+    .top-nav .butns .butn .bi{
+        display: none;
+    }
+
+    .products-sec .prod_card{
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .products-sec .prod_card .img-box{
+        height: 140px;
+        border-radius: 15px;
+    }
+
+    .products-sec .prod_card .card-body{
+        padding: 15px 5px;
+    }
+    .profile-pg .tab{
+        padding: 30px 5px;
+    }
 }
 /*============================== Start small screen of mobile =========================*/
 @media(max-width:768px)
 {
-    
+    .profile-pg .tab .table td, .profile-pg .tab .table th ,.profile-pg .tab .table h5{
+        font-size: 12px;
+    }
+
+    .profile-pg .tab.orders-tab .inner-nav .nav-link{
+        padding: 8px 15px;
+    }
+
+    .profile-pg .tab.orders-tab .badge{
+        min-width: unset;
+    }
 }
 @media (min-width: 577px) and (max-width: 768px)
 {
